@@ -1,64 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>About — Rochan</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+<body data-page="about">
+  <div id="orbNav"></div>
 
-<body>
-<div id="orbs"></div>
+  <header class="hero about-hero">
+    <div class="hero-inner">
+      <h1 id="yourName">About — Rochan</h1>
+      <p class="subtitle">Student · Builder · Bio + AI Explorer</p>
+      <div class="controls">
+        <button id="themeToggle" class="btn">Theme</button>
+      </div>
+    </div>
+  </header>
 
-<header class="hero about-hero">
-  <h1 id="yourName">About Rochan</h1>
-  <p class="subtitle">Student · Builder · Bio + AI Explorer</p>
-</header>
+  <main id="page-content" class="about-wrapper">
+    <section class="about-section" id="who">
+      <h2>Who I Am</h2>
+      <p>Rochan is a sophomore at Lambert High School exploring the intersection of synthetic biology, immuno-engineering, computational protein design, and historical linguistics. He likes building weird bridges between disciplines people don’t usually mix — like immune circuits and language models.</p>
+    </section>
 
-<main class="about-wrapper">
+    <section class="about-section" id="goal">
+      <h2>What I'm Trying To Do</h2>
+      <p>Design biological systems and computational tools to better understand, predict, and engineer living systems — making biology that’s programmable and code that understands biology.</p>
+    </section>
 
-  <!-- Who I Am -->
-  <section class="about-section">
-    <h2>Who I Am</h2>
-    <p>
-      Rochan is a sophomore at Lambert High School exploring the intersection of synthetic biology, immuno-engineering, computational protein design, and historical linguistics. He likes building weird bridges between disciplines people don’t usually mix — like immune circuits and language models.
-    </p>
-  </section>
+    <section class="about-section" id="current">
+      <h2>Current Work</h2>
+      <p>Projects include protein engineering experiments, immune-circuit design, and analysis of emergent structure in AI systems. The work mixes computation, wet-lab planning, and lots of reading.</p>
+    </section>
 
-  <!-- What I’m Trying to Do -->
-  <section class="about-section">
-    <h2>What I'm Trying to Do</h2>
-    <p>
-      His focus right now is on designing biological systems and computational tools that help us better understand — and engineer — living systems. Basically: building things biology can run, and things computers can understand about biology.
-    </p>
-  </section>
+    <section class="about-section" id="life">
+      <h2>Beyond Research</h2>
+      <p>Outside of research, he plays cricket, cooks (occasionally catastrophically), competes in Clash Royale, and speed-runs Wikiraces. He also hates writing about himself in the third person.</p>
+    </section>
+  </main>
 
-  <!-- Current Research -->
-  <section class="about-section">
-    <h2>Current Work</h2>
-    <p>
-      Currently cooking up projects in protein engineering, immune-circuit design, and studying how AI systems evolve. He enjoys the challenge of designing new molecular functions and computational pipelines to analyze biological behavior.
-    </p>
-  </section>
-
-  <!-- Interests -->
-  <section class="about-section">
-    <h2>Beyond Science</h2>
-    <p>
-      When he's not buried in projects, he’s out playing cricket, experimenting in the kitchen (sometimes catastrophically), demolishing kids in Clash Royale, and racing Wikipedia pages like it's a sport.
-    </p>
-  </section>
-
-  <!-- Personal -->
-  <section class="about-section">
-    <h2>Personality Upload</h2>
-    <p>
-      Loves learning, hates writing about himself in third person, and is permanently oscillating between “seriously working” and “seriously overthinking.”
-    </p>
-  </section>
-
-</main>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,42 +1,68 @@
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Rochan Saireddy — Portfolio</title>
+  <title>Rochan Saireddy — Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <main id="app">
-    <header class="hero">
+<body data-page="index">
+  <div id="orbNav" aria-hidden="false"></div>
+
+  <header class="hero">
+    <div class="hero-inner">
       <h1 id="yourName">Rochan Saireddy</h1>
       <p class="subtitle">Bio · CS · Chem · Linguistics</p>
-    </header>
-
-    <!-- Orbs are injected by JS but fallback markup is included for users without JS -->
-    <div id="orbs" aria-hidden="false">
-      <!-- JS will create 6 orbs inside this container -->
+      <div class="controls">
+        <button id="themeToggle" class="btn">Theme</button>
+        <a class="btn ghost" href="vegetable-fish.html">Vegetable Fish</a>
+      </div>
     </div>
+  </header>
 
-    <!-- Example page sections to scroll through -->
-    <section class="panel" id="about">
+  <main id="page-content">
+    <section id="home-welcome" class="section">
       <div class="panel-inner">
-        <h2>About</h2>
+        <h2>Welcome</h2>
+        <p>
+          Hola!
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="panel-inner">
+        <h2>Who I Am</h2>
         <p>What's up! Rochan’s a sophomore at Lambert High School who’s really into synthetic bio, immuno-engineering, computational protein design, and historical linguistics. Right now he’s cooking up projects in protein engineering, immune-circuit design, and studying how AI evolves — basically trying to connect biology, code, and language in weird but cool ways. </br> </br> If you wanna see what he’s building, check out the Projects page — it’s way easier than reading a whole essay here. </br></br> When he’s not buried in research or textbooks, he’s outside with his friends, experimenting in the kitchen (blowing up the microwave), Evo Executioner-ing his way through Clash Royale, speed-running Wikiraces. Rochan's Bio is also a major work in progress, and Rochan has a very difficult time writing in third person!</p>
       </div>
     </section>
 
-    <section class="panel" id="projects">
+    <section id="projects" class="section">
       <div class="panel-inner">
-        <h2>Projects</h2>
-        <p>Highlights of research, competitions, repos.</p>
+        <h2>Featured Projects</h2>
+        <p>Short previews — hit the Projects orb for details.</p>
       </div>
     </section>
 
-    <section class="panel" id="contact">
+    <section id="skills" class="section">
+      <div class="panel-inner">
+        <h2>Skills Snapshot</h2>
+        <p>Wetlab intuition, computational pipelines, and linguistics curiosity.</p>
+      </div>
+    </section>
+
+    <section id="vf" class="section">
+      <div class="panel-inner">
+        <h2>Vegetable Fish</h2>
+        <p>My personal brand: a hybrid of idiocy and science. Visit the Vegetable Fish orb for lore, resume, and creative scraps.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
       <div class="panel-inner">
         <h2>Contact</h2>
-        <p>Email / GitHub / LinkedIn links.</p>
+        <p>Click the Contact orb or use the contact page for email & socials.</p>
       </div>
     </section>
   </main>

@@ -184,3 +184,38 @@ a:hover{ text-decoration:underline }
 @media(max-width:620px){
   #yourName{font-size:2rem}
 }
+
+/* ===== ORB HEX LAYOUT IMPROVEMENTS ===== */
+body:not(.settled) .nav-orb {
+  transition:
+    transform .45s cubic-bezier(.22,1,.36,1),
+    left .45s cubic-bezier(.22,1,.36,1),
+    top .45s cubic-bezier(.22,1,.36,1);
+}
+
+/* wider hex look */
+body:not(.settled) .nav-orb.center {
+  --size: 180px;
+}
+
+body:not(.settled) .nav-orb {
+  --size: 130px;
+}
+
+@media(max-width: 800px) {
+  body:not(.settled) .nav-orb.center { --size: 150px; }
+  body:not(.settled) .nav-orb { --size: 105px; }
+}
+
+/* cleaner stack after settle */
+body.settled .nav-orb {
+  mix-blend-mode: normal;
+  box-shadow: 0 10px 30px rgba(0,0,0,.4);
+}
+
+/* lil glow pulse */
+.nav-orb:not(.settled):hover {
+  box-shadow: 0 0 28px var(--orb-glow);
+  filter: brightness(1.15);
+}
+

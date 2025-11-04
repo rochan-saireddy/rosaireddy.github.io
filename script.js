@@ -68,20 +68,27 @@ function positionCircle(radius = Math.min(innerWidth, innerHeight) * 0.12){
   });
 }
 
-function positionHex(radius = Math.min(innerWidth, innerHeight) * 0.18){
-  const cx = innerWidth/2, cy = innerHeight/2;
+function positionHex(){
+  const cx = innerWidth/2;
+  const cy = innerHeight/2;
+  const radiusX = Math.min(innerWidth, innerHeight) * 0.32; // WIDER horizontally
+  const radiusY = Math.min(innerWidth, innerHeight) * 0.22; // SLIGHTLY squish vertically
+
   orbs.forEach((orb, idx) => {
     if (idx === 0) {
+      // center orb
       orb.style.left = `${cx - orb.offsetWidth/2}px`;
       orb.style.top  = `${cy - orb.offsetHeight/2}px`;
     } else {
       const angle = (idx-1) * (Math.PI*2) / (orbs.length-1);
-      const left = cx + Math.cos(angle)*radius - orb.offsetWidth/2;
-      const top  = cy + Math.sin(angle)*radius - orb.offsetHeight/2;
-      orb.style.left = `${left}px`; orb.style.top = `${top}px`;
+      const left = cx + Math.cos(angle)*radiusX - orb.offsetWidth/2;
+      const top  = cy + Math.sin(angle)*radiusY - orb.offsetHeight/2;
+      orb.style.left = `${left}px`;
+      orb.style.top  = `${top}px`;
     }
   });
 }
+
 
 // settle to sides (stacked)
 function settleToSides(){

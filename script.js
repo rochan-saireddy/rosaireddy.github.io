@@ -55,7 +55,7 @@ const orbs = [centerOrb, ...outerOrbs];
 
 // assign initial random positions and target % positions for wide hex
 const wideHexTargets = [
-  { x: 50, y: 44 }, // center
+  { x: 50, y: 14 }, // center
   { x: 18, y: 36 },
   { x: 82, y: 36 },
   { x: 10, y: 70 },

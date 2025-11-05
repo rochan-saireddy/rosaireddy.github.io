@@ -188,3 +188,16 @@ a:hover{ text-decoration:underline }
 
 /* ========== SMALL SCREENS ========== */
 @media(max-width:620px){ #yourName{ font-size:2rem } }
+
+
+
+/* ====== CENTER ALL TEXT ====== */
+body, .about-section, .panel-inner, .project-card {
+  text-align: center;
+}
+
+/* ====== ORB LABELS WHITE ====== */
+.nav-orb .orb-label {
+  color: #ffffff !important;
+}
+

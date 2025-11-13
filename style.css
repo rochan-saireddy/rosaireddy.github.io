@@ -219,3 +219,12 @@ p, h1, h2, h3, h4, h5, h6, span, a, button {
   text-align: center;
 }
 
+
+
+/* fix headings + paragraphs stacking weird */
+.about-section,
+.about-section h2,
+.about-section p {
+  display: block !important;
+  text-align: center !important;
+}

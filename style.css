@@ -200,4 +200,22 @@ body, .about-section, .panel-inner, .project-card {
 .nav-orb .orb-label {
   color: #ffffff !important;
 }
+/* ====== CENTER EVERY ELEMENT (EXCEPT ORBS) ====== */
+
+/* Center all block-level content */
+body *:not(.orb):not(.nav-orb):not(#orbs):not(#orbNav) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* fix text elements that shouldn't be forced into flex on children */
+p, h1, h2, h3, h4, h5, h6, span, a, button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
